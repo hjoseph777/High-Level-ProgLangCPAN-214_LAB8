@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # exit on error
+# these lines were added
+# Start server to upload in render
 set -o errexit
 
 pip install -r requirements.txt
