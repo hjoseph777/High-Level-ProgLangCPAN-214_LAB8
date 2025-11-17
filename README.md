@@ -16,12 +16,8 @@ Harry Joseph Portfolio is a comprehensive Django web application showcasing prof
 
 **Get the complete project instantly:**
 
-  ![Download High-Level-ProgLangCPAN-214_LAB8](https://img.shields.io/badge/Download-High--Level--ProgLangCPAN--214__LAB8.zip-blue?style=for-the-badge&logo=download)
-
-
 [![Download High-Level-ProgLangCPAN-214_LAB8](https://img.shields.io/badge/Download-High--Level--ProgLangCPAN--214__LAB8.zip-blue?style=for-the-badge&logo=download)](https://github.com/hjoseph777/High-Level-ProgLangCPAN-214_LAB8/releases/download/v1/High-Level-ProgLangCPAN-214_LAB8.zip)
-
-  
+ 
 
 *Complete Django project with portfolio display and contact form ready to run*
 
