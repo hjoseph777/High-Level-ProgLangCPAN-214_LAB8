@@ -24,7 +24,7 @@ Harry Joseph Portfolio is a comprehensive Django web application showcasing prof
 
 **Experience the portfolio in action:**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Portfolio-green?style=for-the-badge&logo=django)](http://127.0.0.1:8000/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Portfolio-green?style=for-the-badge&logo=django)](https://high-level-proglangcpan-214-lab8.onrender.com/)
 
 *Interactive Django web application - Start the development server to view*
 
