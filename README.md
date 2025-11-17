@@ -1,6 +1,4 @@
 ## Harry Joseph Portfolio - Django Web Application
-
-## Project Metadata
 - Author: High-Level Programming Languages CPAN 214
 - Created: November 17, 2025
 - Platform: Django Web Framework (Python)
