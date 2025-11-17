@@ -1,0 +1,103 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Thank You - Harry Joseph{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <h1>Thank You for Your Message!</h1>
+    
+    <div class="success-message">
+        <h2>Message Received Successfully</h2>
+        <p>Thank you for reaching out, <strong>{{ contact_data.name }}</strong>!</p>
+        <p>I have received your message and will get back to you soon at your provided contact number.</p>
+    </div>
+    
+    <div class="submitted-info">
+        <h3>Your Submitted Information:</h3>
+        <div class="info-box">
+            <p><strong>Name:</strong> {{ contact_data.name }}</p>
+            <p><strong>Phone Number:</strong> {{ contact_data.phone }}</p>
+            <p><strong>Message:</strong></p>
+            <div class="message-preview">
+                {{ contact_data.message|linebreaks }}
+            </div>
+        </div>
+    </div>
+    
+    <div class="navigation-links">
+        <a href="{% url 'home' %}" class="nav-btn">Return to Home</a>
+        <a href="{% url 'contact' %}" class="nav-btn secondary">Send Another Message</a>
+    </div>
+
+    <style>
+        /* Thank you page specific styling */
+        .success-message {
+            background-color: #e8f5e8;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .success-message h2 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        
+        .submitted-info {
+            margin: 30px 0;
+        }
+        
+        .info-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        
+        .info-box p {
+            margin: 10px 0;
+        }
+        
+        .message-preview {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .navigation-links {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .nav-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .nav-btn.secondary {
+            background-color: #666;
+        }
+        
+        .nav-btn.secondary:hover {
+            background-color: #555;
+        }
+    </style>
+</div>
+{% endblock %}

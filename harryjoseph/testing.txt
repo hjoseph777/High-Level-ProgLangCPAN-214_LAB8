@@ -1,0 +1,56 @@
+AUTOMATED TESTING SCENARIOS - Harry Joseph Portfolio Django Application
+=======================================================================
+
+Test Scenario 1: Start Django Web Server
+----------------------------------------
+Input: python manage.py runserver
+Expected Output: Development server starts successfully on http://127.0.0.1:8000/
+
+Test Scenario 2: Navigate to Home Webpage
+-----------------------------------------
+Input: GET request to http://127.0.0.1:8000/
+Expected Output: 
+- Status Code: 200
+- Page loads successfully
+- Contains "Harry Joseph" portfolio content
+- Shows work experience section
+
+Test Scenario 3: Navigate to Contact Webpage
+--------------------------------------------
+Input: GET request to http://127.0.0.1:8000/contact/
+Expected Output:
+- Status Code: 200
+- Contact form displays correctly
+- Form fields: name, email, phone, message
+- CSRF token present
+
+Test Scenario 4: Partial Form Submission (Validation Error)
+----------------------------------------------------------
+Input: POST to http://127.0.0.1:8000/contact/
+Form Data:
+- name: "John" 
+- email: "invalid-email"
+- phone: "123"
+- message: ""
+
+Expected Output:
+- Status Code: 200 (form redisplays with errors)
+- Email validation error displayed
+- Phone validation error (too short)
+- Message required field error
+- Form retains valid data (name)
+
+Test Scenario 5: Complete Form Submission (Success)
+---------------------------------------------------
+Input: POST to http://127.0.0.1:8000/contact/
+Form Data:
+- name: "John Smith"
+- email: "john.smith@example.com"
+- phone: "1234567890"
+- message: "This is a test message for the automated testing."
+
+Expected Output:
+- Status Code: 302 (redirect to thank_you)
+- Redirect to http://127.0.0.1:8000/thank_you/
+- Thank you page displays submitted information
+- All form data correctly displayed on confirmation page
